@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1,h2,h4,h5,h3, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none; 
+}
+blockquote, q {
+  quotes: none; 
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; 
+}
+span{
+    display:inline-block;
+}
+.clear{
+    clear:both;
+}
+.container{
+  padding-top: 50px;
+}
+
+#slider{
+    .item{
+        .item__box{
+            width: 225px;
+            margin: 0 auto;
+        }
+    }
+    .nav-left{
+        background: url(../img/left.png) no-repeat;
+        width: 10px;
+        height: 16px;
+        position:absolute;
+        top:50%;
+        left:0px;
+        transform: translateY(-50%);
+    }
+    .nav-right{
+        background: url(../img/right.png) no-repeat;
+        width: 10px;
+        height: 16px;
+        position:absolute;
+        top:50%;
+        right:0px;
+        transform: translateY(-50%);
+    }
+    .owl-dots{
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:-33px;
+        .owl-dot{
+            display: inline-block;
+            margin-right: 10px;
+            span{
+                float: left;
+                display: inline-block;
+                border-radius:10em;
+                background:#fff;
+                width: 7px;
+                height: 7px; 
+                background:black;
+            }
+        }
+        .active{
+            margin-bottom: -2px;
+            span{
+                border-radius:10em;
+                width: 12px;
+                height: 12px; 
+            }
+        }
+    }
+}
